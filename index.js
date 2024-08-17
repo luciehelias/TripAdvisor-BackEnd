@@ -33,7 +33,7 @@ app.post("/contact", async (req, res) => {
       .setFrom(sentFrom)
       .setTo(recipients)
       .setReplyTo(sentFrom)
-      .setSubject("This is a Subject")
+      .setSubject("New message from my clone website tripAdvisor")
       .setHtml(
         `Email sent from : ${firstName} ${lastName} <br> email : <strong>${email}</strong> <br> with this message : <strong>${message}</strong>`
       )
