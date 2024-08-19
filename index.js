@@ -47,6 +47,10 @@ app.post("/contact", async (req, res) => {
   }
 });
 
+app.all("*", (req, res) => {
+  return res.status(404).json("Not found");
+});
+
 app.listen(3000, () => {
   console.log("Server is started");
 });
